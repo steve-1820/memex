@@ -35,7 +35,6 @@ export function addRecord(id, data) {
     })
     .catch(function (err) {
       console.log('addRecord error', err);
-      throw err;
     });
 }
 

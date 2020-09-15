@@ -195,6 +195,7 @@ class RichEditor extends React.Component {
           <Tooltip title="Send">
             <SendOutlined
               onMouseDown={() => {
+                console.log('clicked')
               if (id) {
                 this._updateContent()
               } else {
@@ -322,7 +323,7 @@ const BlockStyleControls = (props) => {
           icon={type.icon ? type.icon : null}
         />
       )
-      ))}
+      )}
     </span>
   );
 };
@@ -349,7 +350,7 @@ const InlineStyleControls = (props) => {
           icon={type.icon ? type.icon : null}
         />
       )
-      ))}
+      )}
     </span>
   );
 };

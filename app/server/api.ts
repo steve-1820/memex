@@ -26,11 +26,10 @@ app.use(bodyParser.json({ limit: '200mb' }));
 app.post('/documents', (req: any, res: any) => {
   if (Object.keys(req.body).length !== 0 && req.body.constructor === Object) {
     for (const key in req.body) {
-      if (!req.body[key].title || !req.body[key].excerpt) {
-        res.sendStatus(500);
+      if (req.body[key].title && req.body[key].excerpt) {
+        console.log('adding key', key);
+        addRecord(`document_${key}`, req.body[key]);
       }
-      console.log('adding key', key);
-      addRecord(`document_${key}`, req.body[key]);
     }
   }
   res.sendStatus(200);

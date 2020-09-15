@@ -55,7 +55,6 @@ const OnlyGraphinReady = (props) => {
     return (
       <div>
         {React.Children.map(children, (child) => {
-          // 如果传入的是 DOM 元素或不是合法的 Element，不传入 props
           if (!React.isValidElement(child) || typeof child.type === 'string') {
             return child;
           }
