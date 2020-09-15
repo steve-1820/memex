@@ -1,10 +1,17 @@
-<img src="internals/img/memex.png" width="100%" />
+<img src="internals/img/memex-knowledge-map.png" width="100%" />
+
+## Intro
+
+This a POC on how a memex could potentially work.
+
 
 ## Demo
 
-Here is a demo on how the Chrome Extension works:
+Streaming data from browser to Electron app: https://vimeo.com/456346417
 
-https://vimeo.com/456346417
+Knowledge map for notes discovery: https://vimeo.com/455978016
+
+Rich text editor to write notes: https://vimeo.com/456732222
 
 ## Motivation
 
