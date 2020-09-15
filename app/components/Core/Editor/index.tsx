@@ -195,7 +195,6 @@ class RichEditor extends React.Component {
           <Tooltip title="Send">
             <SendOutlined
               onMouseDown={() => {
-                console.log('clicked')
               if (id) {
                 this._updateContent()
               } else {
