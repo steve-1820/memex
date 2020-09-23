@@ -31,6 +31,8 @@ yarn
 
 ## Starting Development
 
+NOTE: Please first clone and run the companion Chrome Extension (https://github.com/steve-1820/memex-chrome-extension) so that your user behaviour (i.e blogs you read etc and highlights) are streamed to the Electron app.
+
 Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
 
 ```bash
